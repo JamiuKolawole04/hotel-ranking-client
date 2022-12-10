@@ -85,7 +85,7 @@ export const EditHotel = () => {
     e: MouseEvent<HTMLButtonElement | MouseEvent>
   ) => {
     e.preventDefault();
-    if (window.confirm("Do you want to delete this product")) {
+    if (window.confirm("Do you really want to delete this hotel")) {
       try {
         const deleteHotel = await deleteHotelApi(
           `api/hotel/${detailHotel._id}`
