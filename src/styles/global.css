@@ -1,0 +1,19 @@
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-betwen {
+  justify-content: space-between;
+}

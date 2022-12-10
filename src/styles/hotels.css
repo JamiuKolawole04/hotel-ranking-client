@@ -1,0 +1,13 @@
+.hotels__container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+  /* margin: 20px auto;
+  padding: 12px;
+  max-width: 1180px; */
+}
+
+/*  HOTEL ITEM
+=========================================================  */
+@import url(./hotel-item.css);

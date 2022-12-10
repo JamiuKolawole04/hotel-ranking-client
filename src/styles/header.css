@@ -1,0 +1,27 @@
+header {
+  background-color: var(--mainColor);
+  width: 100%;
+}
+
+header > section {
+  margin: 0 auto;
+  padding: 12px;
+  max-width: 1180px;
+}
+
+header section nav ul {
+  list-style: none;
+}
+
+header section nav ul > li {
+  display: inline-block;
+}
+
+header section nav ul > li {
+  margin-right: 20px;
+}
+
+header section a h1,
+nav ul li {
+  color: var(--white-main);
+}
