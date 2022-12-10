@@ -7,7 +7,7 @@ export const BtnRender = ({ hotelid }: { hotelid: string }) => {
       <Link to={`/detail/${hotelid}`} id="details-btn">
         <button>details</button>
       </Link>
-      <Link to="/" id="edit-btn">
+      <Link to={`/edit/${hotelid}`} id="edit-btn">
         <button>Edit</button>
       </Link>
     </Fragment>

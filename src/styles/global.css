@@ -17,3 +17,7 @@ a {
 .justify-content-betwen {
   justify-content: space-between;
 }
+
+.ml-12 {
+  margin-left: 60px;
+}

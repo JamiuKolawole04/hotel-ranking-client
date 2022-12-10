@@ -35,4 +35,6 @@ body {
 ============================================================= */
 @import url(./hotels.css);
 
+@import url(./detail-hotel.css);
+
 @import url(./brand-fliter.css);
