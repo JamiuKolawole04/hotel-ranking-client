@@ -18,6 +18,7 @@ export const Hotels = () => {
           hotelName={hotel.name}
           hotelPrice={hotel.pricePerNight}
           key={hotel._id}
+          hotelid={hotel._id}
         />
       ))}
     </div>
