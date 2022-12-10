@@ -125,8 +125,9 @@ export const EditHotel = () => {
           `api/hotel/${detailHotel._id}`
         );
         alert(deleteHotel.message);
+        setCallback(!callback);
+        navigate("/");
       } catch (err: any) {
-        console.log(err);
         alert(err.response.data?.message);
       }
     }
