@@ -1,0 +1,13 @@
+button#details-btn,
+button#edit-btn {
+  padding: 8px 20px;
+  margin-right: 4px;
+  color: var(--white-main);
+  border: none;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+button#details-btn {
+  background-color: var(--mainColor);
+}
