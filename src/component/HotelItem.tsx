@@ -1,7 +1,5 @@
 import React from "react";
 
-import hotelImg from "../assets/images/hotel-3.jpg";
-
 interface HotelProps {
   image: string;
   hotelName: string;

@@ -16,7 +16,7 @@ export const Hotels = () => {
         <HotelItem
           image={hotel.image}
           hotelName={hotel.name}
-          hotelPrice={"40"}
+          hotelPrice={hotel.pricePerNight}
           key={hotel._id}
         />
       ))}
