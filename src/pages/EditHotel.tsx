@@ -41,40 +41,6 @@ export const EditHotel = () => {
   );
   const [loading, setLoading] = useState<boolean>(false);
 
-  //   const [hotel, setHotel] = useState<any>(initialState);
-
-  //   const handleUpload = async (event: ChangeEvent<HTMLFormElement>) => {
-  //     event.preventDefault();
-  //     try {
-  //       const file = event.target.files[0];
-
-  //       if (!file) return alert("File does not exist.");
-
-  //       // file bigger than 1mb
-  //       if (file.size > 1024 * 1024) return alert("Size too large!");
-
-  //       if (file.type !== "image/png" && file.type !== "image/jpeg")
-  //         return alert("File format is incorrect");
-
-  //       let formData = new FormData();
-  //       formData.append("file", file);
-
-  //       setLoading(true);
-  //       const { data } = await axios({
-  //         method: "post",
-  //         url: "api/v1/upload",
-  //         data: formData,
-  //         headers: {
-  //           "content-type": "multipart/form-data",
-  //         },
-  //       });
-  //       setLoading(false);
-  //       setImages(data);
-  //     } catch (err: any) {
-  //       alert(err.response.data.msg);
-  //     }
-  //   };
-
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
