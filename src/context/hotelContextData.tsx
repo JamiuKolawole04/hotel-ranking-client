@@ -14,7 +14,7 @@ export const HotelApi = () => {
     };
 
     getHotels();
-  }, []);
+  }, [callback]);
 
   return {
     hotels: [hotels, setHotels],

@@ -23,11 +23,12 @@ export const DetailHotel = () => {
   return (
     <div className="detail-hotel__wrapper d-flex">
       <img src={detailHotel?.image} alt="" />
-      <div className="ml-12">
-        <h1>{detailHotel.name}</h1>
-        <p>{detailHotel?.address}</p>
-        <p>${detailHotel?.pricePerNight} / per night</p>
-        <p>brand: {detailHotel?.brand}</p>
+      <div className="ml-60">
+        <h1>Name: {detailHotel.name}</h1>
+        <p>Address: {detailHotel?.address}</p>
+        <p>Country: {detailHotel?.country}</p>
+        <p>Price: ${detailHotel?.pricePerNight} / per night</p>
+        <p>Brand: {detailHotel?.brand}</p>
       </div>
     </div>
   );

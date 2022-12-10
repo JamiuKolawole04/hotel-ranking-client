@@ -8,8 +8,6 @@ export const Hotels = () => {
   const state: any = useContext(GlobalState);
   const [hotels]: HotelsData[] = state.hotelApi.hotels;
 
-  console.log(hotels);
-
   return (
     <div className="hotels__container">
       {hotels.map((hotel: HotelsData) => (
