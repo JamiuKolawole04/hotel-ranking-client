@@ -56,7 +56,6 @@ export const CreateBrand = () => {
 
         alert(deleteBrand.message);
       } catch (err: any) {
-        console.log(err);
         alert(err.response.data.message);
       }
     }
