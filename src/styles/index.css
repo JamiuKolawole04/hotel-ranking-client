@@ -19,7 +19,8 @@ body {
 
 .home__wrapper,
 .detail-hotel__wrapper,
-.edit-hotel__section {
+.edit-hotel__section,
+.create-hotel__section {
   margin: 20px auto;
   padding: 12px;
   max-width: 1180px;
@@ -52,3 +53,7 @@ body {
 /* EDIT HOTEKL
 ================================================================== */
 @import url(./edit-hotel.css);
+
+/* CREATE HOTEl
+==================================================================== */
+@import url(./create-hotel.css);

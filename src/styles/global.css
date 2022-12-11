@@ -13,6 +13,9 @@ a {
 .justify-content-center {
   justify-content: center;
 }
+.justify-content-around {
+  justify-content: space-around;
+}
 
 .justify-content-betwen {
   justify-content: space-between;

@@ -10,7 +10,9 @@ export const Header = () => {
 
         <nav>
           <ul>
-            <li>Login</li>
+            <li>
+              <Link to="/create">Create</Link>
+            </li>
             <li>Register</li>
           </ul>
         </nav>

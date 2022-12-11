@@ -17,6 +17,7 @@ export interface HotelDetail {
   address: string;
   brand: string;
   pricePerNight: string;
+  image: string;
 }
 
 export const EditHotel = () => {

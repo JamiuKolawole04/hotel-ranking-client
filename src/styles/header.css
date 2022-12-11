@@ -22,6 +22,7 @@ header section nav ul > li {
 }
 
 header section a h1,
-nav ul li {
+nav ul li,
+nav ul li a {
   color: var(--white-main);
 }

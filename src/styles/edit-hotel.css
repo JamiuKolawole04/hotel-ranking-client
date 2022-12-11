@@ -26,7 +26,8 @@ button.edit-btn {
 }
 
 button.edit-btn,
-button.delete-btn {
+button.delete-btn,
+button.create-hotel-btn {
   color: var(--white-main);
   border: none;
   padding: 12px 40px;

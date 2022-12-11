@@ -34,12 +34,12 @@ interface GetBrandResponse {
   data: BrandsData[];
 }
 
-interface GetUpdateHotelResponse {
+type GetUpdateOrCreateHotelResponse = {
   success: boolean;
   status: string;
   message: string;
   data: HotelsData[];
-}
+};
 
 interface getDeleteHotelResponse {
   success: boolean;
@@ -58,9 +58,19 @@ export const getHotelsApi = async (url: string) => {
 };
 
 export const updateHotelApi = async (url: string, hotelData: HotelDetail) => {
-  const { data } = await axios<GetUpdateHotelResponse>({
+  const { data } = await axios<GetUpdateOrCreateHotelResponse>({
     url: `${url}`,
     method: "PATCH",
+    data: hotelData,
+  });
+
+  return data;
+};
+
+export const createHotelApi = async (url: string, hotelData: HotelDetail) => {
+  const { data } = await axios<GetUpdateOrCreateHotelResponse>({
+    url: `${url}`,
+    method: "POST",
     data: hotelData,
   });
 
