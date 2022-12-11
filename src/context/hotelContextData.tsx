@@ -9,12 +9,12 @@ export const HotelApi = () => {
 
   useEffect(() => {
     const getHotels = async () => {
-      const hotels = await getHotelsApi("api/hotel");
+      const hotels = await getHotelsApi(`api/hotel?${brand}`);
       setHotels(hotels.data);
     };
 
     getHotels();
-  }, [callback]);
+  }, [callback, brand]);
 
   return {
     hotels: [hotels, setHotels],
