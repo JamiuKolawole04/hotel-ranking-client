@@ -45,3 +45,17 @@ button.delete-btn:hover {
 button.delete-btn {
   background-color: red;
 }
+
+@media screen and (max-width: 760px) {
+  .sm-ml-0 {
+    margin-left: 0;
+  }
+
+  .sm-colum {
+    flex-direction: column;
+  }
+
+  .edit-hotel__section > img {
+    width: 100%;
+  }
+}

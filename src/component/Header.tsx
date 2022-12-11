@@ -11,9 +11,8 @@ export const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/create">Create</Link>
+              <Link to="/create">add-hotel</Link>
             </li>
-            <li>Register</li>
           </ul>
         </nav>
       </section>

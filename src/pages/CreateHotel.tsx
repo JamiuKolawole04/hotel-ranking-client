@@ -96,7 +96,7 @@ export const CreateHotel = () => {
   };
 
   return (
-    <section className="create-hotel__section d-flex align-items-center ">
+    <section className="create-hotel__section d-flex align-items-center sm-colum ">
       <div className="upload">
         <input type="file" name="file" id="file_up" onChange={handleUpload} />
         {isImageUploading ? (
@@ -108,7 +108,7 @@ export const CreateHotel = () => {
         )}
       </div>
 
-      <form className="ml-60" onSubmit={handleFormSubmit}>
+      <form className="ml-60 sm-ml-0" onSubmit={handleFormSubmit}>
         <div>
           <label htmlFor="name">Hotel Name</label>
           <input

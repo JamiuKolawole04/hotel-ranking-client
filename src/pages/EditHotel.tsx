@@ -101,9 +101,9 @@ export const EditHotel = () => {
   };
 
   return (
-    <section className="edit-hotel__section d-flex">
+    <section className="edit-hotel__section d-flex sm-colum">
       <img src={detailHotel.image} alt="" />
-      <form className="ml-60 form-edit">
+      <form className="ml-60 sm-ml-0 form-edit">
         <div>
           <label htmlFor="name">Hotel Name</label>
           <input
