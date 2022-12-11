@@ -13,6 +13,10 @@ export const Header = () => {
             <li>
               <Link to="/create">add-hotel</Link>
             </li>
+
+            <li>
+              <Link to="/brand">add-brand</Link>
+            </li>
           </ul>
         </nav>
       </section>
