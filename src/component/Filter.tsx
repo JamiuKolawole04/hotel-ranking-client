@@ -14,7 +14,7 @@ export const Filter = () => {
 
   return (
     <div className="brand-filter__menu">
-      <span>Filters:</span>
+      <span>Filter by brands:</span>
       <select name="brand" id="brand" value={brand} onChange={handleBrand}>
         <option value="">All brands</option>
 

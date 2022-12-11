@@ -27,11 +27,12 @@ export interface BrandsData {
   updatedAt: string;
 }
 
-interface GetBrandResponse {
+interface CreateOrGetBrandOrUpdateOrDeleteBrandResponse {
   success: boolean;
   status: string;
-  nbHits: number;
-  data: BrandsData[];
+  nbHits?: number;
+  message: string;
+  data: BrandsData[] | null;
 }
 
 type GetUpdateOrCreateHotelResponse = {
@@ -86,10 +87,43 @@ export const deleteHotelApi = async (url: string) => {
   return data;
 };
 
+export const createBrandsApi = async (url: string, createBrandData: string) => {
+  const { data } = await axios<CreateOrGetBrandOrUpdateOrDeleteBrandResponse>({
+    url: `${url}`,
+    method: "POST",
+    data: {
+      name: createBrandData,
+    },
+  });
+
+  return data;
+};
+
 export const getBrandsApi = async (url: string) => {
-  const { data } = await axios<GetBrandResponse>({
+  const { data } = await axios<CreateOrGetBrandOrUpdateOrDeleteBrandResponse>({
     url: `${url}`,
     method: "GET",
+  });
+
+  return data;
+};
+
+export const updateBrandsApi = async (url: string, updateBrandData: string) => {
+  const { data } = await axios<CreateOrGetBrandOrUpdateOrDeleteBrandResponse>({
+    url: `${url}`,
+    method: "PATCH",
+    data: {
+      name: updateBrandData,
+    },
+  });
+
+  return data;
+};
+
+export const deleteBrandsApi = async (url: string) => {
+  const { data } = await axios<CreateOrGetBrandOrUpdateOrDeleteBrandResponse>({
+    url: `${url}`,
+    method: "DELETE",
   });
 
   return data;

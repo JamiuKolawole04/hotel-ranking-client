@@ -4,6 +4,7 @@ import { getBrandsApi } from "../api";
 
 export const BrandApi = () => {
   const [brands, setBrands] = useState<any>([]);
+  const [callback, setCallback] = useState<boolean>(false);
 
   useEffect(() => {
     const getBrands = async () => {
@@ -12,9 +13,10 @@ export const BrandApi = () => {
     };
 
     getBrands();
-  }, []);
+  }, [callback]);
 
   return {
     brands: [brands, setBrands],
+    callback: [callback, setCallback],
   };
 };

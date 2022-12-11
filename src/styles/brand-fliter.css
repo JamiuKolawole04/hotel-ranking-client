@@ -2,6 +2,10 @@
   margin-bottom: 12px;
 }
 
+.brand-filter__menu span {
+  margin-bottom: 8px;
+}
+
 select {
   padding: 4px;
 }

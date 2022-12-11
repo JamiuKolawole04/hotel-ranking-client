@@ -1,0 +1,56 @@
+.brands-section {
+  flex-wrap: wrap;
+  margin: 28px auto;
+  max-width: 700px;
+}
+
+.brands-section form {
+  margin-bottom: 20px;
+  width: 310px;
+}
+
+.brands-section form > label {
+  display: block;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.brands-section form > input {
+  width: 210px;
+  border: none;
+  border-bottom-width: medium;
+  border-bottom: 1px solid #555;
+  height: 35px;
+  outline: none;
+  padding: 0 4px;
+}
+
+.brands-section button {
+  background: var(--mainColor);
+  height: 35px;
+  outline: none;
+  padding: 0 4px;
+  width: 70px;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.brands-section button#brand-create {
+  margin-left: 8px;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid #555;
+}
+
+.brands-section button#edit-brands-btn {
+  margin-right: 12px;
+}
+
+.brands-list {
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+  min-width: 290px;
+  padding: 12px;
+}
