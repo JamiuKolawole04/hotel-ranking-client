@@ -22,10 +22,9 @@ export const CreateBrand = () => {
     if (onEdit) {
       try {
         const editBrand = await updateBrandsApi(`api/brand/${iD}`, brandName);
-        console.log(editBrand);
-
         setOnEdit(false);
         setCallback(!callback);
+        setBrandName("");
         alert(editBrand.message);
       } catch (err: any) {
         alert(err.response.data.message);
@@ -33,8 +32,8 @@ export const CreateBrand = () => {
     } else {
       try {
         const createBrand = await createBrandsApi(`api/brand`, brandName);
-
         setOnEdit(false);
+        setBrandName("");
         setCallback(!callback);
         alert(createBrand.message);
       } catch (err: any) {
