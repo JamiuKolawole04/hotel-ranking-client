@@ -11,11 +11,11 @@ export const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/create">add-hotel</Link>
+              <Link to="/create">CREATE</Link>
             </li>
 
             <li>
-              <Link to="/brand">add-brand</Link>
+              <Link to="/brand">BRANDS</Link>
             </li>
           </ul>
         </nav>
