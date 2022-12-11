@@ -6,11 +6,19 @@ export const HotelApi = () => {
   const [hotels, setHotels] = useState<HotelsData[]>([]);
   const [callback, setCallback] = useState<boolean>(false);
   const [brand, setBrand] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
     const getHotels = async () => {
-      const hotels = await getHotelsApi(`api/hotel?${brand}`);
-      setHotels(hotels.data);
+      try {
+        setLoading(true);
+        const hotels = await getHotelsApi(`api/hotel?${brand}`);
+        setHotels(hotels.data);
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoading(false);
+      }
     };
 
     getHotels();
@@ -20,5 +28,6 @@ export const HotelApi = () => {
     hotels: [hotels, setHotels],
     callback: [callback, setCallback],
     brand: [brand, setBrand],
+    loading: [loading, setLoading],
   };
 };

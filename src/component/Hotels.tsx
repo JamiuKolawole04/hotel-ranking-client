@@ -7,6 +7,9 @@ import { HotelsData } from "../api";
 export const Hotels = () => {
   const state: any = useContext(GlobalState);
   const [hotels]: HotelsData[] = state.hotelApi.hotels;
+  const [loading] = state.hotelApi.loading;
+
+  if (loading) return <p>loading</p>;
 
   return (
     <div className="hotels__container">
